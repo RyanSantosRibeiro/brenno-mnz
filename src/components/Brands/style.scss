@@ -1,0 +1,16 @@
+@import './../../scss/all.scss';
+
+.brands {
+    background-color: $color-8;
+    height: auto;
+
+    .slick-slider {
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 20px;
+        color: white;
+        padding: 20px 10px;
+    }
+}

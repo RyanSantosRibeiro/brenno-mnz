@@ -1,0 +1,138 @@
+@import './../../scss/all.scss';
+
+.header {
+    
+    background-color: rgba($color: $color-5, $alpha: 0);
+    height: auto;
+    padding: 20px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: -1px;
+    width: 100%;
+    z-index: 100;
+    transition: 400ms all ease-in-out;
+
+    &.fixed {
+        background-color: rgba($color: #0d1b2a, $alpha: 1);
+        box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.06);
+
+    }
+    
+    .container-fluid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        @include fade("in","down", 100px, 2s);
+    }
+
+
+    &__logo {
+        a {
+            font-size: $font-size-xxl;
+            text-transform: uppercase;
+            color: $color-2;
+            font-weight: $font-weight-700;
+            transition: 400ms all ease-in-out;
+
+            span {
+                color: $color-1;
+            }
+
+            img {
+                max-width: 150px;
+                height: auto;
+            }
+        }
+    }
+
+        .highlight {
+            background-color: rgba($color-1, .6);
+            display: flex;
+            border-radius: 4px;
+            
+            &:hover {
+                background-color: $color-1;
+                
+                a {
+                    color: $text-color-pure;
+                }
+            }
+            
+            a {
+                color: $text-color-pure;
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        @include tablet {
+            gap: 2px;
+        }
+
+        @include mobile {
+            display: none;
+        }
+
+        
+        a {
+            padding: 6px 12px;
+            color: $white;
+            font-weight: $font-weight-600;
+            font-size: $font-size-md;
+            transition: 200ms all ease-in-out;
+            position: relative;
+            
+            &:hover {
+                color: $color-2;
+
+                &::after {
+                    // height: 2px;
+                    // width: calc(100% - 24px);
+                    transform: scale3d(1,1,1);
+                    transform-origin: 0 50%;
+                }
+            }
+
+            @include tablet {
+                font-size: $font-size-sm;
+            }
+    
+            &::after {
+                content: "";
+                width: calc(100% - 24px);
+                height: 2px;
+                background-color: $color-2;
+                border-radius: 2px;
+                position: absolute;
+                bottom: -2px;
+                left: 12px;
+                opacity: 1;
+                transition: transform .35s cubic-bezier(.2,1,.3,1);
+                transform: scale3d(0,1,1);
+                transform-origin: 100% 50%;
+
+            }
+        }
+    }
+
+
+    &__button {
+        @include mobile {
+            display: none;
+        }
+    }
+}

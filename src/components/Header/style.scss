@@ -17,7 +17,7 @@
     transition: 400ms all ease-in-out;
 
     &.fixed {
-        background-color: rgba($color: #0d1b2a, $alpha: 1);
+        background-color: rgba($color: $black, $alpha: 1);
         box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.06);
 
     }

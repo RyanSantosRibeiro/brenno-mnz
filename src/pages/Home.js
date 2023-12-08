@@ -7,6 +7,7 @@ import Pilares from '../components/Pilares';
 import Statistics from '../components/Statistics';
 import PilaresDetail from '../components/PilaresDetail';
 import Brands from '../components/Brands';
+import Form from '../components/Form';
 
 
 function Home() {
@@ -14,10 +15,11 @@ function Home() {
     <div className="Home">
       <Banner />
       <Brands />
-      <Pilares />
+      <Form />
       <Statistics />
       {/* <PilaresDetail /> */}
       <About />
+      <Pilares />
       <Job />
       {/* <Gallery />  */}
       <Contact />

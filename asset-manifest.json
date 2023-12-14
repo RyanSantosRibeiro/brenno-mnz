@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/brenno-mnz/static/css/main.ec1ae90a.css",
-    "main.js": "/brenno-mnz/static/js/main.ab04aeb5.js",
+    "main.css": "/brenno-mnz/static/css/main.eadef727.css",
+    "main.js": "/brenno-mnz/static/js/main.0c836d70.js",
     "static/media/brenno.png": "/brenno-mnz/static/media/brenno.031b5812fb72a43c3df0.png",
+    "static/media/banner.jpg": "/brenno-mnz/static/media/banner.9e7e0ddc6d86262fe1a2.jpg",
     "static/media/riofit.png": "/brenno-mnz/static/media/riofit.e0e1e778f8a5c521e025.png",
     "static/media/vekyo.png": "/brenno-mnz/static/media/vekyo.68c027c18bba808cb47f.png",
     "static/media/shape-3.png": "/brenno-mnz/static/media/shape-3.85acc99bb2eae1849b35.png",
@@ -32,11 +33,11 @@
     "static/media/slick.ttf": "/brenno-mnz/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/brenno-mnz/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/brenno-mnz/index.html",
-    "main.ec1ae90a.css.map": "/brenno-mnz/static/css/main.ec1ae90a.css.map",
-    "main.ab04aeb5.js.map": "/brenno-mnz/static/js/main.ab04aeb5.js.map"
+    "main.eadef727.css.map": "/brenno-mnz/static/css/main.eadef727.css.map",
+    "main.0c836d70.js.map": "/brenno-mnz/static/js/main.0c836d70.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec1ae90a.css",
-    "static/js/main.ab04aeb5.js"
+    "static/css/main.eadef727.css",
+    "static/js/main.0c836d70.js"
   ]
 }

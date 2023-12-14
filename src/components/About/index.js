@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react';
 import './style.scss';
 import image from '../../assets/img/metodo.svg';
+import banner1 from '../../assets/img/banner.jpg';
+import logo from '../../assets/img/logo.png';
 import $ from 'jquery';
 
 
 const About = () => {
 
     const active = (e) => {
-        if($("#about").offset().top - $(window).scrollTop() < 450 && !$(".about").hasClass("animate")) {
+        if($("#about").offset().top - $(window).scrollTop() < (window.screen.height) && !$(".about").hasClass("animate")) {
             $(".about").addClass("animate");
         }
     }
@@ -17,12 +19,20 @@ const About = () => {
     },[]);
 
     return  (
-        <section className="about" id='about'>
+        <section className="about" id='about' style={{background: `url(${banner1})`}}>
              <div className='container'>
-                <h2 className='default-title'>Metodologia <span className='default-subtitle'>Foco em resultado e transparência</span></h2>
+                <h2 className='default-title'>Quem Somos</h2>
+                <img className='' src={logo} alt=''/>
             </div>
             <div className="container">
-                <img src={image}/>
+                <p><b>Escritório digital</b> focado em estratégias de escala para negócios que já atuam na
+                internet.</p>
+                <p>Nossa dinâmica de serviço nos permite ter os <b>melhores profissionais</b> para o seu
+                projeto à nossa disposição.</p>
+                <p>Contamos com parceiros de negócios no <b>Brasil, Estados Unidos, Argentina e
+                Portugal.</b></p>
+                <p>Atualmente nossa capacidade é de <b>20 clientes</b> simultâneos e temos sob gestão 
+                <b> R$1 milhão</b> / ano de orçamento em mídia.</p>
             </div>
         </section>
     )

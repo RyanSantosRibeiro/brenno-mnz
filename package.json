@@ -19,7 +19,7 @@
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://euryansantos.com/",
+  "homepage": "https://ryansantosribeiro.github.io/brenno-mnz",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

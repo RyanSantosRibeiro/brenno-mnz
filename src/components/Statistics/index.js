@@ -10,6 +10,7 @@ import img4 from './../../assets/img/engineering.png'
 
 const NumberAnimation = ({ targetValue }) => {
     const [currentValue, setCurrentValue] = useState(0);
+
   
     useEffect(() => {
         const animationDuration = 20000;
@@ -20,20 +21,22 @@ const NumberAnimation = ({ targetValue }) => {
         let frame = 0;
     
         const animationInterval = setInterval(() => {
-          setCurrentValue((prevValue) => {
-            const progress = frame / frames;
-            const acceleratedProgress = Math.pow(progress, acceleration);
-            const newValue = prevValue + acceleratedProgress * targetValue;
-    
-            // Verifica se atingiu ou ultrapassou o valor final
-            if (newValue >= targetValue || frame >= frames) {
-              setCurrentValue(targetValue);
-              clearInterval(animationInterval);
-            } else {
-              frame++;
-              return newValue;
-            }
-          });
+            if($("#statistics").offset().top - $(window).scrollTop() < (window.screen.height) && $(".statistics").hasClass("animate")) {
+                setCurrentValue((prevValue) => {  
+                  const progress = frame / frames;
+                  const acceleratedProgress = Math.pow(progress, acceleration);
+                  const newValue = prevValue + acceleratedProgress * targetValue;
+          
+                  // Verifica se atingiu ou ultrapassou o valor final
+                  if (newValue >= targetValue || frame >= frames) {
+                    setCurrentValue(targetValue);
+                    clearInterval(animationInterval);
+                  } else {
+                    frame++;
+                    return newValue;
+                  }
+                });
+            } 
         }, updateInterval);
     
         // Limpa o intervalo quando o componente é desmontado
@@ -47,7 +50,7 @@ const NumberAnimation = ({ targetValue }) => {
 const Statistics = () => {
 
     const active = (e) => {
-        if($("#statistics").offset().top - $(window).scrollTop() < 850 && !$(".statistics").hasClass("animate")) {
+        if($("#statistics").offset().top - $(window).scrollTop() < (window.screen.height) && !$(".statistics").hasClass("animate")) {
             $(".statistics").addClass("animate");
         }
     }

@@ -8,6 +8,9 @@ import Statistics from '../components/Statistics';
 import PilaresDetail from '../components/PilaresDetail';
 import Brands from '../components/Brands';
 import Form from '../components/Form';
+import Planos from '../components/Planos';
+import Funciona from '../components/Funciona';
+import Work from '../components/Work';
 
 
 function Home() {
@@ -16,13 +19,16 @@ function Home() {
       <Banner />
       <Brands />
       <Form />
+      <Work />
+      <Funciona />
       <Statistics />
+      <Planos />
       {/* <PilaresDetail /> */}
       <About />
-      <Pilares />
-      <Job />
+      {/* <Pilares /> */}
+      {/* <Job /> */}
       {/* <Gallery />  */}
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 }

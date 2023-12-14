@@ -62,6 +62,12 @@
             line-height: 95px;
             font-weight: $font-weight-700;
 
+            @include desktop {
+                line-height: 48px;
+                font-size: 50px;
+                text-align: left;
+            }
+
             @include tablet {
                 line-height: 48px;
                 font-size: 50px;

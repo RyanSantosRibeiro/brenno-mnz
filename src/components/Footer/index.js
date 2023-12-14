@@ -1,13 +1,48 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './style.scss';
+import image from '../../assets/img/metodo.svg';
+import banner1 from '../../assets/img/banner.jpg';
+import logo from '../../assets/img/logo.png';
+import $ from 'jquery';
 
 
 const Footer = () => {
 
+    const active = (e) => {
+        if($("#footer").offset().top - $(window).scrollTop() < (window.screen.height) && !$(".footer").hasClass("animate")) {
+            $(".footer").addClass("animate");
+        }
+    }
+    
+    useEffect(() => {
+        $(window).on('scroll',()=>active());
+    },[]);
+
     return  (
         <section className="footer" id='footer'>
+             <div className='container'>
+                <img className='' src={logo} alt=''/>
+            </div>
             <div className="container">
-                <p>Develop by: <a href='https://github.com/RyanSantosRibeiro'>Ryan Santos</a></p>
+                <ul>
+                    <li>Contato</li>
+                    <li><b>Whatsapp:</b> (99)99999-9999</li>
+                    <li><b>Email:</b> contato@email.com</li>
+                    <li><b>Instagrma:</b> @instagram</li>
+                </ul>
+                <ul>
+                    <li>Links</li>
+                    <li>Linkdin</li>
+                    <li>Desenvolvedor</li>
+                    <li></li>
+                </ul>
+                <ul>
+                    <li>Institucional</li>
+                    <li>CEO</li>
+                    <li>Equipe de Vendas</li>
+                    <li>Analistas</li>
+                    <li>White Label</li>
+                </ul>
             </div>
         </section>
     )

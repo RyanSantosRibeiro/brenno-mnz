@@ -40,6 +40,12 @@
   }
 
   // Up
+  @if $type == 'dul' {
+    animation-name: dulAnimation;
+    transform: translateY($factor) translateX($factor);
+  }
+
+  // Up
   @if $type == 'up' {
     animation-name: upAnimation;
     transform: translateY($factor);
@@ -77,6 +83,16 @@
     }
     100% {
       transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes dulAnimation {
+    0% {
+      transform: translateY($factor) translateX($factor);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) translateX(0);
       opacity: 1;
     }
   }

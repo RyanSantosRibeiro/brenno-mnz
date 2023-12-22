@@ -1,0 +1,123 @@
+@import './../../../scss/all.scss';
+
+.steps {
+    background-color: $wl-3;
+    min-height: 300px;
+    padding: 70px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 20px;
+
+    .default-title {
+        opacity: 0;
+        color: $white;
+    }
+
+    .container {
+        &:last-child {
+            background-color: $wl-2;
+            border-radius: 16px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        gap: 20px;
+        align-items: flex-start;
+
+        @include tablet {
+           flex-direction: column;
+        }
+    }
+
+    &__highlight {
+        background-color: $color-8;
+        width: 100%;
+        padding: 40px 0 0 0;
+
+        p {
+            color: $white;
+            font-size: 22px;
+            line-height: 28px;
+            width: 100%;
+            text-align: center;
+
+            span {
+                color: $color-1;
+                font-family: $main-font-3;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+
+            b {
+                color: $color-2;
+                font-family: $main-font-3;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    &__card {
+        // background-color: $white;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 30%;
+        width: 380px;
+        height: 280px;
+        opacity: 0;
+        padding: 20px;
+
+        @include tablet {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        img {
+            // max-width: 80px;
+            height: 65px;
+            width: auto;
+        }
+
+        p {
+            height: auto;
+            color: $wl-3;
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 500;
+            text-align: left;
+
+            @include tablet {
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    &.animate {
+        .default-title {
+            @include fade("in","right", 300px, 4s,.8s);
+        }
+        .steps__card-1 {
+            @include fade("in","right", 300px, 4s,.8s);
+        }
+        .steps__card-2 {
+            @include fade("in","right", 300px, 4s,.6s);
+        }
+        .steps__card-3 {
+            @include fade("in","right", 300px, 4s,.4s);
+        }
+        .steps__card-4 {
+            @include fade("in","right", 300px, 4s,.2s);
+        }
+    }
+
+}

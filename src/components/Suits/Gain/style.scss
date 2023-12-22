@@ -1,0 +1,62 @@
+@import './../../../scss/all.scss';
+
+.gain-st {
+    background-color: $st-3;
+    min-height: 300px;
+    padding: 140px 0;
+    background-repeat: no-repeat;
+    background-position: -50% -22%;
+    background-size: auto 110%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 20px;
+
+    .default-title {
+        opacity: 0;
+        color: $white;
+
+        span {
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        width: 100%;
+      }
+  
+      th, td {
+        border: 2px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        color: $st-2;
+        padding: 20px 10px;
+        font-size: 18px
+      }
+  
+      th {
+        // background-color: #f2f2f2;
+      }
+
+
+
+    &.animate {
+        table {
+            @include fade("in","zoom", .7, 3s,.8s);
+        }
+        .default-title {
+            @include fade("in","right", 300px, 4s,.8s);
+        }
+    }
+
+}

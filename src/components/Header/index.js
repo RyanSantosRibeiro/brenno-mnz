@@ -21,7 +21,7 @@ const Header = () => {
     
 
     return  (
-        <div className="header" id='header'>
+        <div className={`header ${window.location.pathname == '/' ? 'home': window.location.pathname == '/brenno-mnz' ? 'home' : ''}`} id='header'>
             <div className='container-fluid'>
                 <div className='header__logo'>
                     <a href='/'>
@@ -31,8 +31,9 @@ const Header = () => {
 
                 <ul className='header__menu'>
                     <li><a href='/'>Home</a></li>
-                    <li><a href='#pilares'>Pilares</a></li>
-                    <li><a href='#about'>Sobre</a></li>
+                    <li><a href='/white-label'>White Label</a></li>
+                    <li><a href='/suits'>Suits</a></li>
+                    <li><a href='/brenno'>Brenno Menezes</a></li>
                     {/* <li><a href='#skills'>Skills</a></li> */}
                     <li className=''><a href='#job'>Meus Trabalhos</a></li>
                 </ul>

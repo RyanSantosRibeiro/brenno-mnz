@@ -1,11 +1,10 @@
 @import './../../scss/all.scss';
 
 .header {
-    
-    background-color: rgba($color: $color-5, $alpha: 0);
+    background-color: rgba($color: $black, $alpha: 1);
     height: auto;
     padding: 20px 0;
-
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,6 +14,11 @@
     width: 100%;
     z-index: 100;
     transition: 400ms all ease-in-out;
+    
+    &.home {
+        background-color: rgba($color: $color-5, $alpha: 0);
+
+    }
 
     &.fixed {
         background-color: rgba($color: $black, $alpha: 1);
@@ -97,7 +101,7 @@
             position: relative;
             
             &:hover {
-                color: $color-2;
+                // color: $color-2;
 
                 &::after {
                     // height: 2px;
@@ -115,7 +119,7 @@
                 content: "";
                 width: calc(100% - 24px);
                 height: 2px;
-                background-color: $color-2;
+                background-color: $white;
                 border-radius: 2px;
                 position: absolute;
                 bottom: -2px;

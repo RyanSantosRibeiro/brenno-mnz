@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/brenno-mnz/static/css/main.7b6de8be.css",
-    "main.js": "/brenno-mnz/static/js/main.6830dee2.js",
+    "main.css": "/brenno-mnz/static/css/main.2ba97276.css",
+    "main.js": "/brenno-mnz/static/js/main.e9157e6e.js",
+    "static/media/sup.jpg": "/brenno-mnz/static/media/sup.5326ec4ffc3bb13cc6ba.jpg",
     "static/media/brenno.png": "/brenno-mnz/static/media/brenno.031b5812fb72a43c3df0.png",
     "static/media/mulher.png": "/brenno-mnz/static/media/mulher.9b85ebcb807d337e6f89.png",
     "static/media/banner.jpg": "/brenno-mnz/static/media/banner.9e7e0ddc6d86262fe1a2.jpg",
+    "static/media/MNZ.png": "/brenno-mnz/static/media/MNZ.a096589a5d4b106a6300.png",
     "static/media/wave2.png": "/brenno-mnz/static/media/wave2.dc0e317cff06727a4397.png",
     "static/media/wave1.png": "/brenno-mnz/static/media/wave1.44fdfbdf3eb97f9b376e.png",
     "static/media/riofit.png": "/brenno-mnz/static/media/riofit.e0e1e778f8a5c521e025.png",
@@ -39,11 +41,11 @@
     "static/media/slick.ttf": "/brenno-mnz/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/brenno-mnz/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/brenno-mnz/index.html",
-    "main.7b6de8be.css.map": "/brenno-mnz/static/css/main.7b6de8be.css.map",
-    "main.6830dee2.js.map": "/brenno-mnz/static/js/main.6830dee2.js.map"
+    "main.2ba97276.css.map": "/brenno-mnz/static/css/main.2ba97276.css.map",
+    "main.e9157e6e.js.map": "/brenno-mnz/static/js/main.e9157e6e.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b6de8be.css",
-    "static/js/main.6830dee2.js"
+    "static/css/main.2ba97276.css",
+    "static/js/main.e9157e6e.js"
   ]
 }

@@ -32,6 +32,7 @@
         justify-content: space-between;
         align-items: center;
         @include fade("in","down", 100px, 2s);
+        overflow: visible;
     }
 
 
@@ -83,12 +84,32 @@
         justify-content: space-between;
         gap: 20px;
 
+
         @include tablet {
-            gap: 2px;
+            right: 100%;
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            top: -20px;
+            background-color: $black;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 30px;
+            transition: 500ms all ease-in-out;
+            gap: 30px;
+
+            img {
+                position: absolute;
+                right: 30px;
+                top: 30px;
+                width: 24px;
+                height: 24px;
+            }
         }
 
-        @include mobile {
-            display: none;
+        &.open {
+            right: 0%;
         }
 
         
@@ -112,7 +133,7 @@
             }
 
             @include tablet {
-                font-size: $font-size-sm;
+                font-size: 20px;
             }
     
             &::after {
@@ -130,6 +151,20 @@
                 transform-origin: 100% 50%;
 
             }
+        }
+    }
+
+    &__menu__mobile {
+        display: none;
+        @include mobile {
+            display: flex;    
+        }
+    }
+
+    &__menu img {
+        display: none;
+        @include mobile {
+            display: flex;    
         }
     }
 

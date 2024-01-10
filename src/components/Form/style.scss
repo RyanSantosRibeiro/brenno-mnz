@@ -64,6 +64,10 @@
             text-transform: uppercase;
             margin-bottom: 40px;
             opacity: 0;
+
+            @include tablet {
+                font-size: 30px;
+            }
             
         }
         
@@ -71,6 +75,11 @@
             font-size: 26px;
             line-height: 30px;
             font-weight: 400;
+
+            @include tablet {
+                font-size: 18px;
+                line-height: 20px;
+            }
 
             span {
                 font-weight: 600;
@@ -123,6 +132,12 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+
+        @include tablet {
+            width: 100%;
+            padding: 20px;
+        }
+
 
         &__text {
             opacity: 0;
@@ -191,6 +206,10 @@
             align-items: center;
             justify-content: flex-start;
             gap: 10px;
+
+            @include tablet {
+                font-size: 14px;
+             }
             
 
             &.active {
@@ -216,6 +235,10 @@
                 display: flex;
                 position: relative;
                 box-shadow: 0px 0px 0px 2px #ffffff;
+                @include tablet {
+                    width: 14px;
+                    height: 14px;
+                 }
             }
         }
 
@@ -227,6 +250,10 @@
             line-height: 30px;
             font-weight: 500;
             padding: 5px 10px;
+
+            @include tablet {
+                font-size: 14px;
+             }
 
 
             &:focus-visible,
@@ -245,6 +272,10 @@
             font-weight: 600;
             opacity: 1;
             margin-bottom: 10px;
+
+            @include tablet {
+               font-size: 18px;
+            }
 
             span {
                 font-weight: 600;
@@ -267,6 +298,10 @@
             color: $white;
             font-size: 28px;
             font-weight: 700;
+
+            @include tablet {
+                font-size: 18px;
+             }
 
         }
     }

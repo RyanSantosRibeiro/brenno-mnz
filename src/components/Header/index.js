@@ -1,11 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.scss';
 import logo from '../../assets/img/logo.png';
+import menu from '../../assets/img/menu-m.png';
+import fecha from '../../assets/img/fecha.png';
 
 import $ from 'jquery';
 
 
 const Header = () => {
+    const [open, setOpen] = useState(false);
 
     const handleScroll = () => {
         if (document.documentElement.scrollTop > 100) {
@@ -29,13 +32,19 @@ const Header = () => {
                     </a>
                 </div>
 
-                <ul className='header__menu'>
+                <div className='header__menu__mobile' onClick={()=>setOpen(!open)}>
+                        <img className='' src={menu} alt=''/>
+                </div>
+
+                <ul className={`header__menu ${open?'open':''}`}>
+                    <img className='' src={fecha} alt='' onClick={()=>setOpen(!open)}/>
                     <li><a href='/'>Home</a></li>
                     <li><a href='/white-label'>White Label</a></li>
-                    <li><a href='/suits'>Suits</a></li>
+                    {/* <li><a href='/suits'>Suits</a></li> */}
+                    <li><a href='/pages'>Pages</a></li>
                     <li><a href='/brenno'>Brenno Menezes</a></li>
                     {/* <li><a href='#skills'>Skills</a></li> */}
-                    <li className=''><a href='#job'>Meus Trabalhos</a></li>
+                    {/* <li className=''><a href='#job'>Meus Trabalhos</a></li> */}
                 </ul>
 
                 {/* <a href='#contact' className='header__button primary-button'>

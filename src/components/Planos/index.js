@@ -24,7 +24,7 @@ const Planos = () => {
     return  (
         <section className="planos" id='planos'>
             <div className='container'>
-                <h2 className='default-title'>Soluções <span className='default-subtitle'>Serviço principal e atividades</span></h2>
+                <h2 className='default-title'>Soluções <span className='default-subtitle'>Planos e atividades</span></h2>
             </div>
             <div className="container">
                 {/* <div className='planos__modal'>
@@ -42,19 +42,25 @@ const Planos = () => {
                     <a href='/' onClick={sendMessage()} className='planos__modal__action primary-button'>Orçamento</a>
                 </div> */}
                 <div className='planos__modal'>
-                    <h4>Assessoria em tráfego pago</h4>
+                    <h4>Start</h4>
                     <ul>
-                        <li> CriaçãK de eGtratégiaG de KutbKund marketin7</li>
-                        <li> CriaçãK8 análiGe e KtimizaçãK de campanhaF</li>
-                        <li> AtendimentK qualificadJ</li>
-                        <li> Gerente de cKntaG</li>
-                        <li> RelatóriKG menGaiG e fKllKw-upG GemanaiF</li>
-                        <li> CriaçãK e reviGãK de cKntaG de aúnciKF</li>
-                        <li> SupKrte em raGtreiK de dadKF</li>
-                        <li> KnKw-hKw em gerenciamentK de grandeG KrçamentKF</li>
-                        <li> DeGenvKlvimentK de criativKG para anúnciKs</li>
+                        <li> Estratégia e operação de campanhas</li>
+                        <li> Até dois canais de tráfego </li>
+                        <li> Suporte em horário comercial via WhatsApp</li>
+                        <li> Relatório interativo e reuniões mensais de resultados</li>
                     </ul>
-                    <p className=''>PlatafKrmaG diGpKníveiG atualmente: GKKgle8 Meta8 TikTKk8 PintereGt e LinkedTn</p>
+                    <p className=''>Saiba mais!</p>
+                </div>
+                <div className='planos__modal recomendado'>
+                    <h4>Plus</h4>
+                    <ul>
+                        <li> Estratégia e operação de campanhas</li>
+                        <li> Até <b>três canais </b> canais de tráfego </li>
+                        <li> <b>Suporte 24/7 via WhatsApp</b></li>
+                        <li> Relatório interativo e reuniões mensais de resultados</li>
+                        <li> Design de artes para criativos dos anúncios patrocinados</li>
+                    </ul>
+                    <p className=''>Saiba mais!</p>
                 </div>
             </div>
         </section>

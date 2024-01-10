@@ -13,9 +13,9 @@
     position: relative;
     overflow: hidden;
 
-
-    @include mobile {
-        height: 500px;
+    @include tablet {
+        height: auto;
+        min-height: 50vh;
     }
     
     &__image {
@@ -58,8 +58,8 @@
             @include fade("in","right", 200px, 4s);
             max-width: 70%;
             color: $white;
-            font-size: 110px;
-            line-height: 95px;
+            font-size: 95px;
+            line-height: 80px;
             font-weight: $font-weight-700;
 
             @include desktop {

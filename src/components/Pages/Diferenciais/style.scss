@@ -1,0 +1,90 @@
+@import './../../../scss/all.scss';
+
+.diferenciais-pg {
+    background-color: pg-3;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    height: auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    
+    
+    @include tablet {
+        padding: 0 4% ;
+        height: auto;
+    }
+
+    .default-title {
+        
+    }
+
+    .container {
+
+        &:first-child {
+            margin-top: 80px;
+
+        }
+
+        &:last-child {
+            margin-bottom: 80px;
+            padding-top: 40px;
+            padding-bottom: 80px;
+    
+    
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas com largura igual */
+            gap: 40px; /* Espaço entre os itens */
+            
+            @include tablet {
+                grid-template-columns: repeat(1, 1fr); /* Cria 4 colunas com largura igual */
+                width: 100%;
+                gap: 10px;
+            }
+    
+            &>div {
+                flex: 1;
+            }
+        }
+        
+    }
+
+    .default-title {
+        color: $pg-1;
+    }
+
+    &__card {
+        width: 220px;
+        height: 220px;
+        padding: 20px;
+        border-radius: 32px;
+        background: #ffffff;
+        box-shadow:  11px 8px 20px #bebebe47, -20px -20px 30px #ffffff59;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include tablet {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            justify-content: flex-start;
+        }
+
+        p {
+            color: rgba($color: $pg-2, $alpha: .8);
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 500;
+            text-align: left;
+        }
+    }
+
+}

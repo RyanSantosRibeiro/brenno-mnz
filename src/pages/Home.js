@@ -18,10 +18,10 @@ function Home() {
     <div className="Home">
       <Banner />
       <Brands />
+      {/* <Statistics /> */}
       <Form />
       <Work />
-      <Funciona />
-      <Statistics />
+      {/* <Funciona /> */}
       <Planos />
       {/* <PilaresDetail /> */}
       <About />

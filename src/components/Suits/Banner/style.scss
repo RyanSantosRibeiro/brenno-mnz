@@ -2,8 +2,8 @@
 
 .banner-st {
     background-color: $st-3;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: top;
     background-repeat: no-repeat;
     height: calc(100vh + 430px);
 
@@ -110,13 +110,28 @@
             top: 20%;
         }
 
+        .primary-button {
+            background-color: $st-1;
+            
+            &:hover {
+                background-color: darken($color: $st-1, $amount: 20%);
+            }
+        }
+
+        .secondary-button {
+            
+            &:hover {
+                color: $st-1 !important;
+            }
+        }
+
 
         h2 {
             @include fade("in","right", 200px, 4s);
             max-width: 70%;
             color: $st-1;
-            font-size: 110px;
-            line-height: 95px;
+            font-size: 90px;
+            line-height: 85px;
             font-weight: $font-weight-700;
 
             @include desktop {
@@ -134,6 +149,11 @@
             @include mobile {
                 line-height: 28px;
                 font-size: 28px;
+            }
+
+            &.big {
+                font-size: 130px;
+                line-height: 100px
             }
         }
 
@@ -193,7 +213,7 @@
         width: 500px;
         top: 20%;
         max-width: 40%;
-        mix-blend-mode: luminosity;
+        // mix-blend-mode: luminosity;
         opacity: .7;
         z-index: 5;
     }

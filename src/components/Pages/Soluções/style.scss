@@ -1,0 +1,298 @@
+@import './../../../scss/all.scss';
+
+.solucoes-pg {
+    background-color: darken($color: $pg-3, $amount: 5%);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    height: auto;
+    padding: 4% 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    
+
+
+    @include mobile {
+        height: auto;
+    }
+
+    .container {
+        
+        margin-top: 40px;
+        margin-bottom: 80px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 20px;
+
+        &>div {
+            flex: 1;
+        }
+
+        @include tablet {
+            flex-direction: column;
+        }
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        h3 {
+            color: $pg-1;
+            margin-bottom: 20px;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 23px;
+            font-weight: 500;
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 16px;
+        }
+    }
+
+    &__points-title {
+        width: 70%;
+        text-align: center;
+        color: $st-2;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 70px;
+        margin-bottom: 50px;
+    }
+    &__points-message {
+        text-align: left;
+        color: $st-2;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        margin-top: 20px;
+    }
+    &__points {
+        width: 70%;
+        text-align: left;
+        color: $st-2;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        &::before {
+            content: '';
+            background-color: $st-2;
+            border-radius: 50px;
+            height: 14px;
+            width: 14px;
+            position: absolute;
+            left: -40px;
+        }
+    }
+    
+    &__image {
+        max-width: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+    }
+
+    &__tree {
+        width: 105vw;
+        position: absolute;
+        top: 0;
+    }
+
+    &__text {
+        
+        position: absolute;
+        top: 25%;
+        left: 3%;
+        
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 30px;
+
+        max-width: 90vw;
+
+        @include tablet {
+            top: 20%;
+        }
+
+        .primary-button {
+            background-color: $pg-1;
+            
+            &:hover {
+                background-color: darken($color: $pg-1, $amount: 20%);
+            }
+        }
+        
+        .secondary-button {
+            border-color: $pg-1 !important;
+            color: $pg-1 !important;
+            
+            &:hover {
+                background-color: $pg-1;
+                color: $white !important;
+            }
+        }
+
+
+        h2 {
+            @include fade("in","right", 200px, 4s);
+            max-width: 40%;
+            // color: $pg-1;
+            font-size: 52px;
+            line-height: 55px;
+            font-weight: $font-weight-700;
+
+            @include desktop {
+                line-height: 48px;
+                font-size: 50px;
+                text-align: left;
+            }
+
+            @include tablet {
+                line-height: 48px;
+                font-size: 50px;
+                text-align: left;
+            }
+            
+            @include mobile {
+                line-height: 28px;
+                font-size: 28px;
+            }
+
+            &.big {
+                font-size: 130px;
+                line-height: 100px
+            }
+        }
+
+        p {
+            @include fade("in","right", 200px, 4s , 500ms);
+            color: $low-medium;
+            font-size: 22px;
+            line-height: 40px;
+            font-weight: 700;
+
+            @include tablet {
+                font-size: 20px;
+                line-height: 26px;
+                text-align: left;
+            }
+            @include mobile {
+                line-height: 16px;
+                font-size: 16px;
+            }
+        }
+
+        &__buttons {
+            @include fade("in","right", 200px, 4s , 800ms);
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+            margin-top: 20px;
+
+
+            .secondary-button {
+                color: $white;
+                border-color: $white;
+
+                &:hover {
+                    background-color: $white;
+                    color: $color-1;
+                }
+            }
+        }
+
+        &__arrow {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            max-height: 0px;
+            transition: 300ms all cubic-bezier(0.13, 1.02, 0.32, 0.97);
+            transform: rotate(-90deg);
+            width: 20px;
+        }
+    }
+
+    &__person {
+        @include fade("in","left", 300px, 3s);
+        position: absolute;
+        right: 15%;
+        height: auto;
+        width: 500px;
+        top: 20%;
+        max-width: 40%;
+        // mix-blend-mode: luminosity;
+        opacity: .7;
+        z-index: 5;
+    }
+
+    &__wave1 {
+        @include fade("in","left", 400px, 5s);
+        position: absolute;
+        right: -20%;
+        height: auto;
+        width: 1200px;
+        top: 10%;
+        max-width: 100%;
+        opacity: .7;
+    }
+
+    &__wave2 {
+        @include fade("in","right", 300px, 4s);
+        position: absolute;
+        left: -40%;
+        height: auto;
+        width: 1200px;
+        top: 10%;
+        max-width: 100%;
+        filter: opacity(0.7);
+    }
+
+    &__foguete {
+        @include fade("in","dul", 300px, 3s);
+        position: absolute;
+        right: 30%;
+        height: auto;
+        width: 120px;
+        
+        max-width: 100%;
+        opacity: .7;
+    }
+
+}

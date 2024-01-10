@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './style.scss';
 import $ from 'jquery';
 import 'jquery.easing';
-import brenno from '../../../assets/img/wl/wl-logo.png';
+import brenno from '../../../assets/img/suits/mulher.png';
+import image from '../../../assets/img/suits/bg.png';
 import wave1 from '../../../assets/img/wl/wave1.png';
 import wave2 from '../../../assets/img/wl/wave2.png';
 import foguete from '../../../assets/img/wl/foguete.png';
@@ -121,22 +122,22 @@ const Banner = () => {
         // $(window).on('mousemove',(e)=>activeMockup(e));
     },[]);
     return  (
-        <section className="banner-st" id='banner-st'>
+        <section className="banner-st" id='banner-st' style={{backgroundImage: `url(${image})`}}>
             <img className='banner-st__person' src={brenno} alt=''/>
-            <img className='banner-st__wave1' src={wave1} alt=''/>
+            {/* <img className='banner-st__wave1' src={wave1} alt=''/>
             <img className='banner-st__wave2' src={wave2} alt=''/>
-            <img className='banner-st__foguete' src={foguete} alt=''/>
+            <img className='banner-st__foguete' src={foguete} alt=''/> */}
             
             <div className='banner-st__text'>
-                <p>Ofereça</p>
-                <h2>TRÁFEGO PAGO</h2>
-                <p>na sua agência usando a nossa estrutura e aumente o seu</p>
-                <h2>FATURAMENTO & AUTORIDADE</h2>
-                <p>sem aumentar seus custos e esforços.</p>
-                {/* <div className='banner-st__text__buttons'>
+                <p>Nossa area especializada em</p>
+                <h2>MARKETING ESTRATÉGICO</h2>
+                <p>para escritórios de</p>
+                <h2 className='big'>ADVOCACIA</h2>
+                {/* <p>sem aumentar seus custos e esforços.</p> */}
+                <div className='banner-st__text__buttons'>
                   <a href='#about' className='primary-button'>Primeiro Passo</a>
                   <a href='#about' className='secondary-button'>Deixe-me ver mais!</a>
-                </div> */}
+                </div>
             </div>
 
             <div className='container'>

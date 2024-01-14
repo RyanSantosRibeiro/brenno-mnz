@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6433e4a0.css",
-    "main.js": "/static/js/main.8378337e.js",
+    "main.css": "/static/css/main.6eb44062.css",
+    "main.js": "/static/js/main.c83f6fc9.js",
     "static/media/sup.jpg": "/static/media/sup.5326ec4ffc3bb13cc6ba.jpg",
     "static/media/brenno.png": "/static/media/brenno.031b5812fb72a43c3df0.png",
     "static/media/mulher.png": "/static/media/mulher.9b85ebcb807d337e6f89.png",
@@ -20,19 +20,27 @@
     "static/media/bg.png": "/static/media/bg.f8b4448a37f5bc576c30.png",
     "static/media/mockup2.png": "/static/media/mockup2.a72caa98cbeb000051f6.png",
     "static/media/dily.jpg": "/static/media/dily.d9eac99dabb6ff4a48b6.jpg",
-    "static/media/logoRyan.jpg": "/static/media/logoRyan.5f83095622b77e935c24.jpg",
     "static/media/clube-intima.jpg": "/static/media/clube-intima.91b0953d0d6e77968c96.jpg",
+    "static/media/5.png": "/static/media/5.4d685b55126094c8dd56.png",
     "static/media/foguete.png": "/static/media/foguete.9627f2d41821790184f9.png",
+    "static/media/4.png": "/static/media/4.f46581fa3d0487fb49e8.png",
     "static/media/hardyn.jpg": "/static/media/hardyn.ca9c04acece91f5f3a8c.jpg",
+    "static/media/8.png": "/static/media/8.d2bff50a4f8362dc559a.png",
     "static/media/Dagelland-8MB7B.ttf": "/static/media/Dagelland-8MB7B.05a27b02a356b2622da9.ttf",
     "static/media/fiturb.jpg": "/static/media/fiturb.7134b48413f4b7024e43.jpg",
     "static/media/tilev.jpg": "/static/media/tilev.bdf5a1378a4413393a5c.jpg",
+    "static/media/3.png": "/static/media/3.8c2cbc06280897915852.png",
     "static/media/cvl.jpg": "/static/media/cvl.c3d523ff268adefdc34b.jpg",
+    "static/media/2.png": "/static/media/2.e9bb88459fb73f507051.png",
     "static/media/jescri.jpg": "/static/media/jescri.ada4a23316f54f6e03e6.jpg",
+    "static/media/logo.png": "/static/media/logo.d2e80e5fcaaac0212c95.png",
+    "static/media/9.png": "/static/media/9.213ed93ea25b05d6d7ae.png",
     "static/media/maluan.jpg": "/static/media/maluan.2718b054d9d4114f043e.jpg",
+    "static/media/6.png": "/static/media/6.a3739a9c9ace0683a357.png",
     "static/media/rgtx.jpg": "/static/media/rgtx.7efb41c99c8934fc13f1.jpg",
     "static/media/wl-logo.png": "/static/media/wl-logo.d09f0ec8c12c5e307101.png",
-    "static/media/logo.png": "/static/media/logo.d62bb3b5cb2784e494f2.png",
+    "static/media/7.png": "/static/media/7.b28c15a5de4a1b696928.png",
+    "static/media/1.png": "/static/media/1.dff42b5165141090ca9b.png",
     "static/media/shape-5.png": "/static/media/shape-5.9069e754907e293af45b.png",
     "static/media/engineering.png": "/static/media/engineering.6694062e9263f62f039d.png",
     "static/media/metodo.svg": "/static/media/metodo.724f80cc8794358ff698a5cddb0080d5.svg",
@@ -41,11 +49,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.6433e4a0.css.map": "/static/css/main.6433e4a0.css.map",
-    "main.8378337e.js.map": "/static/js/main.8378337e.js.map"
+    "main.6eb44062.css.map": "/static/css/main.6eb44062.css.map",
+    "main.c83f6fc9.js.map": "/static/js/main.c83f6fc9.js.map"
   },
   "entrypoints": [
-    "static/css/main.6433e4a0.css",
-    "static/js/main.8378337e.js"
+    "static/css/main.6eb44062.css",
+    "static/js/main.c83f6fc9.js"
   ]
 }

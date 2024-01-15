@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import './style.scss';
-import image from '../../assets/img/logoRyan.jpg';
 import $ from 'jquery';
 
 import img1 from './../../assets/img/tablet.png'
@@ -24,7 +23,7 @@ const Work = () => {
     return  (
         <section className="work" id='work'>
             <div className='container'>
-                <h2 className='default-title'>Como Funciona <span className='default-subtitle'>Proximos passos</span></h2>
+                <h2 className='default-title'>Como Funciona<span className='default-subtitle'></span></h2>
             </div>
             <div className="container">
                 <div className='work__card work__card-1'>

@@ -8,6 +8,16 @@ import Slider from "react-slick";
 import "../../../node_modules/slick-carousel/slick/slick.css"; 
 import "../../../node_modules/slick-carousel/slick/slick-theme.css"; 
 
+import img1 from '../../assets/img/brands/1.png';
+import img2 from '../../assets/img/brands/2.png';
+import img3 from '../../assets/img/brands/3.png';
+import img4 from '../../assets/img/brands/4.png';
+import img5 from '../../assets/img/brands/5.png';
+import img6 from '../../assets/img/brands/6.png';
+import img7 from '../../assets/img/brands/7.png';
+import img8 from '../../assets/img/brands/8.png';
+import img9 from '../../assets/img/brands/9.png';
+
 const Brands = () => {
   const settings = {
     dots: false,
@@ -30,22 +40,31 @@ const Brands = () => {
           <div className='container'>
             <Slider {...settings}>
               <div>
-                <h3>BRAND 1</h3>
+                <img src={img1}/>
               </div>
               <div>
-                <h3>BRAND 2</h3>
+                <img src={img2}/>
               </div>
               <div>
-                <h3>BRAND 3</h3>
+                <img src={img3}/>
               </div>
               <div>
-                <h3>BRAND 4</h3>
+                <img src={img4}/>
               </div>
               <div>
-                <h3>BRAND 5</h3>
+                <img src={img5}/>
               </div>
               <div>
-                <h3>BRAND 6</h3>
+                <img src={img6}/>
+              </div>
+              <div>
+                <img src={img7}/>
+              </div>
+              <div>
+                <img src={img8}/>
+              </div>
+              <div>
+                <img src={img9}/>
               </div>
             </Slider>
           </div>

@@ -2,16 +2,26 @@
 
 .banner-pg {
     background-color: $white;
-    background-size: contain;
+    background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 100vh;
 
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
+
+    &::before {
+        content: '';
+        background-color: rgba($color: #000000, $alpha: .8);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+    }
     
 
 
@@ -125,7 +135,7 @@
         h2 {
             @include fade("in","right", 200px, 4s);
             max-width: 40%;
-            // color: $pg-1;
+            color: white;
             font-size: 52px;
             line-height: 55px;
             font-weight: $font-weight-700;

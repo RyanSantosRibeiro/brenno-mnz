@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import './style.scss';
-import image from '../../assets/img/logoRyan.jpg';
 import $ from 'jquery';
 
 

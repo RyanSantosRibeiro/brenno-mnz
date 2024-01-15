@@ -1,6 +1,6 @@
 {
-  "short_name": "Ryan Santos",
-  "name": "My Portifolio",
+  "short_name": "MNZ",
+  "name": "MNZ Company",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logoRyan.png",
+      "src": "favicon-1.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logoRyan.png",
+      "src": "favicon-2.png",
       "type": "image/png",
       "sizes": "512x512"
     }

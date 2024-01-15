@@ -31,8 +31,8 @@ const About = () => {
                 projeto à nossa disposição.</p>
                 <p>Contamos com parceiros de negócios no <b>Brasil, Estados Unidos, Argentina e
                 Portugal.</b></p>
-                <p>Atualmente nossa capacidade é de <b>20 clientes</b> simultâneos e temos sob gestão 
-                <b> R$1 milhão</b> / ano de orçamento em mídia.</p>
+                <p>Temos sob gestão mais de
+                <b> R$1 milhão</b> / ano de orçamento em mídia e clientes nos <b>4 cantos do globo</b>.</p>
             </div>
         </section>
     )

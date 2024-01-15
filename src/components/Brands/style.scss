@@ -1,11 +1,18 @@
 @import './../../scss/all.scss';
 
 .brands {
-    background-color: $color-8;
+    background-color: #bfd1e3;
+    // background-image: linear-gradient(to right, #689ac0, #5489b5, #4079a9, #2a699e, #0e5992);
     height: auto;
 
     .slick-slider {
         width: 100%;
+    }
+
+    img {
+        max-height:70px;
+        width: auto;
+        margin: 10px 0;
     }
 
     h3 {

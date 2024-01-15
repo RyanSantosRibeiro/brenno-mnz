@@ -11,6 +11,7 @@ import mockup2 from '../../assets/img/mockup2.png';
 import mockup3 from '../../assets/img/mockup3.png';
 import 'jquery.easing';
 import brenno from '../../assets/img/brenno.png';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
 
@@ -130,11 +131,22 @@ const Banner = () => {
             <img className='banner__person' src={brenno} alt=''/>
             
             <div className='banner__text'>
-                <h2>ESTRATÉGIA DE MARKETING <br></br> & PLANEJAMENTO DE CAMPANHA </h2>
-                <p>Descubra uma nova solução para seu faturamento!</p>
+                <p>Procurando um escritório sério para cuidar das <br></br> suas estratégias de marketing, tráfego e mídia paga?</p>
+                <h2>Conheça a MNZ Company</h2>
                 <div className='banner__text__buttons'>
-                  <a href='#about' className='primary-button'>Primeiro Passo</a>
-                  <a href='#about' className='secondary-button'>Deixe-me ver mais!</a>
+                  <a className='primary-button' 
+                  onClick={()=>{
+                    $([document.documentElement, document.body]).animate({
+                      scrollTop: $("#form").offset().top - 100 
+                  }, 800);
+                  }}
+                  >Dar o primeiro passo</a>
+
+                  <a className='secondary-button' onClick={()=>{
+                    $([document.documentElement, document.body]).animate({
+                      scrollTop: $("#about").offset().top - 100
+                  }, 800);
+                  }}>Conhecer a MNZ</a>
                 </div>
             </div>
         </section>

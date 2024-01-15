@@ -3,7 +3,7 @@ import './style.scss';
 import $ from 'jquery';
 import 'jquery.easing';
 import brenno from '../../../assets/img/pg/MNZ.png';
-import image from '../../../assets/img/suits/bg.png';
+import image from '../../../assets/img/pg/bg.jpg';
 import wave1 from '../../../assets/img/wl/wave1.png';
 import wave2 from '../../../assets/img/wl/wave2.png';
 import foguete from '../../../assets/img/wl/foguete.png';
@@ -16,7 +16,7 @@ const Banner = () => {
         // $(window).on('mousemove',(e)=>activeMockup(e));
     },[]);
     return  (
-        <section className="banner-pg" id='banner-pg'>
+        <section className="banner-pg" id='banner-pg' style={{backgroundImage: `url(${image})`}}>
             <img className='banner-pg__person' src={brenno} alt=''/>
             {/* <img className='banner-pg__wave1' src={wave1} alt=''/>
             <img className='banner-pg__wave2' src={wave2} alt=''/>

@@ -20,11 +20,11 @@ function Home() {
       <Brands />
       {/* <Statistics /> */}
       <Form />
-      <Work />
-      {/* <Funciona /> */}
-      <Planos />
-      {/* <PilaresDetail /> */}
       <About />
+      <Work />
+      <Planos />
+      {/* <Funciona /> */}
+      {/* <PilaresDetail /> */}
       {/* <Pilares /> */}
       {/* <Job /> */}
       {/* <Gallery />  */}

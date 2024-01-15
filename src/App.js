@@ -7,7 +7,8 @@ import {
   Routes,
   Link,
   useRouteMatch,
-  useParams
+  useParams,
+  HashRouter
 } from "react-router-dom";
 import Home from './pages/Home';
 import WhiteLabel from './pages/WhiteLabel';
@@ -23,7 +24,7 @@ import Pages from './pages/Pages';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
     <Header />
     <Routes>
       <Route exact path="/" element={<Home />}/>
@@ -33,7 +34,7 @@ function App() {
       <Route exact path="/suits" element={<Suits />} />
       <Route exact path="/founder" element={<Brenno />} />
       <Route exact path="/brenno" element={<Brenno />} />
-      <Route exact path="/pages" element={<Pages />} />
+      <Route path="/pages" element={<Pages />} />
 
       {/* PROD */}
       <Route exact path="/" element={<Home />}/>
@@ -46,7 +47,7 @@ function App() {
     </Routes>
     <Footer/>
     <Develop/>
-  </BrowserRouter>
+  </HashRouter>
   );
 }
 

@@ -24,8 +24,7 @@ const Tabela = () => {
     return  (
         <section className="tabela-pg" id='tabela-pg'>
             <div className='container'>
-                <h2 className='default-title'>Planos<span className='default-subtitle'>*Essa é uma média de MRR, valores a serem
-                    definidos no momento do contrato.</span></h2>
+                <h2 className='default-title'>Planos<span className='default-subtitle'></span></h2>
             </div>
             <div className='container'>
                 <table>

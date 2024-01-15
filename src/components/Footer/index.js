@@ -26,13 +26,13 @@ const Footer = () => {
             <div className="container">
                 <ul>
                     <li>Contato</li>
-                    <li><b>Whatsapp:</b> (99)99999-9999</li>
-                    <li><b>Email:</b> contato@email.com</li>
-                    <li><b>Instagrma:</b> @instagram</li>
+                    <li><b>Whatsapp:</b> (22) 98800-1876</li>
+                    <li><b>Email:</b> comercial@mnzcompany.com</li>
+                    <li><b>Instagrma:</b> @mnz.company</li>
                 </ul>
                 <ul>
                     <li>Links</li>
-                    <li>Linkdin</li>
+                    <li>Linkedin</li>
                     <li>Desenvolvedor</li>
                     <li></li>
                 </ul>

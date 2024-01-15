@@ -5,6 +5,7 @@ import menu from '../../assets/img/menu-m.png';
 import fecha from '../../assets/img/fecha.png';
 
 import $ from 'jquery';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -24,7 +25,7 @@ const Header = () => {
     
 
     return  (
-        <div className={`header ${window.location.pathname == '/' ? 'home': window.location.pathname == '/brenno-mnz' ? 'home' : ''}`} id='header'>
+        <div className={`header ${window.location.hash == '' ? 'home': window.location.hash == '#/brenno-mnz' ? 'home' : ''}`} id='header'>
             <div className='container-fluid'>
                 <div className='header__logo'>
                     <a href='/'>
@@ -37,12 +38,13 @@ const Header = () => {
                 </div>
 
                 <ul className={`header__menu ${open?'open':''}`}>
+                    {/* <li>{window.location.hash}</li> */}
                     <img className='' src={fecha} alt='' onClick={()=>setOpen(!open)}/>
-                    <li><a href='/'>Home</a></li>
-                    <li><a href='/white-label'>White Label</a></li>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/white-label'>White Label</Link></li>
                     {/* <li><a href='/suits'>Suits</a></li> */}
-                    <li><a href='/pages'>Pages</a></li>
-                    <li><a href='/brenno'>Brenno Menezes</a></li>
+                    <li><Link to='/pages'>Pages</Link></li>
+                    {/* <li><Link to='/brenno'>Brenno Menezes</Link></li> */}
                     {/* <li><a href='#skills'>Skills</a></li> */}
                     {/* <li className=''><a href='#job'>Meus Trabalhos</a></li> */}
                 </ul>

@@ -11,7 +11,7 @@ const Solucoes = () => {
 
     
     const active = (e) => {
-        if($("#solucoes-pg").offset().top - $(window).scrollTop() < (window.screen.height) && !$(".solucoes-pg").hasClass("animate")) {
+        if($("#solucoes-pg").offset().top - $(window).scrollTop() < (window.screen.height - 400) && !$(".solucoes-pg").hasClass("animate")) {
             $(".solucoes-pg").addClass("animate");
         }
     }

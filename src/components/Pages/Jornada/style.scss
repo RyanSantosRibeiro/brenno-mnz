@@ -1,0 +1,160 @@
+@import './../../../scss/all.scss';
+
+.jornada-pg {
+    // background-color: $pg-3;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    padding: 60px 0;
+    height: auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        background-color: rgba($color: $pg-3, $alpha: .6);
+        position: absolute;
+        left: 0;
+        height: 88%;
+        width: 120%;
+        transform: rotate(-3deg);
+        transform-origin: center;
+    }
+    
+    
+    @include tablet {
+        padding: 0 4% ;
+        height: auto;
+    }
+
+    .default-title {
+        z-index: 10;
+    }
+
+    .container {
+
+        &:first-child {
+            margin-top: 80px;
+
+        }
+
+        &:last-child {
+            // margin-bottom: 80px;
+            padding-top: 40px;
+            padding-bottom: 80px;
+    
+    
+            display: flex;
+            flex-direction: column;
+
+            gap: 40px; /* Espaço entre os itens */
+            
+            @include tablet {
+                grid-template-columns: repeat(1, 1fr); /* Cria 4 colunas com largura igual */
+                width: 100%;
+                gap: 10px;
+            }
+    
+            &>div {
+                flex: 1;
+            }
+        }
+        
+    }
+
+    .default-title {
+        color: $pg-1;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        padding-left: 40px;
+        position: relative;
+
+        &::before {
+            content: '';
+            background-color: $pg-1;
+            width: 2px;
+            height: 0;
+            position: absolute;
+            left: 20px;
+            top: 25px;
+            transition: 2s all cubic-bezier(0.32, 0.57, 0.26, 0.93);
+        }
+
+        li {
+            padding: 20px 10px;
+            opacity: 0;
+
+            &::after {
+                content: '';
+                width: 10px;
+                height: 10px;
+                background-color: $pg-1;
+                border-radius: 50px;
+                position: absolute;
+                left: -24px;
+                margin-top: 2px;
+                opacity: 0;
+            }
+        }
+    }
+
+
+    &.animate {
+        .jornada-pg__list::before {
+            height: calc(100% - 58px);
+        }
+
+        .jornada-pg__list  {
+            li:nth-child(1) {
+                @include fade("in","down", 20px, 1.5s ,  0s);
+                &::after {
+                    @include fade("in","zoom", 2, 1.5s ,  0s);
+                }
+            }
+
+            li:nth-child(2) {
+                @include fade("in","down", 20px, 1.5s ,  200ms);
+                &::after {
+                    @include fade("in","zoom", 2, 1.5s ,  200ms);
+                }
+            }
+
+            li:nth-child(3) {
+                @include fade("in","down", 20px, 1.5s ,  400ms);
+                &::after {
+                    @include fade("in","zoom", 2, 1.5s ,  400ms);
+                }
+            }
+
+            li:nth-child(4) {
+                @include fade("in","down", 20px, 1.5s ,  600ms);
+                &::after {
+                    @include fade("in","zoom", 2, 1.5s ,  600ms);
+                }
+            }
+
+            li:nth-child(5) {
+                @include fade("in","down", 20px, 1.5s ,  800ms);
+                &::after {
+                    @include fade("in","zoom", 2, 1.5s ,  800ms);
+                }
+            }
+
+            li:nth-child(6) {
+                @include fade("in","down", 20px, 1.5s ,  1000ms);
+                &::after {
+                    @include fade("in","zoom", 2, 1.5s ,  1000ms);
+                }
+            }
+        }
+    }
+}

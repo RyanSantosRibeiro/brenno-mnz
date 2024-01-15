@@ -6,6 +6,7 @@ import Banner from '../components/Pages/Banner';
 import Tabela from '../components/Pages/Tabela';
 import Diferenciais from '../components/Pages/Diferenciais';
 import Solucoes from '../components/Pages/Soluções';
+import Jornada from '../components/Pages/Jornada';
 
 
 function Pages() {
@@ -14,6 +15,7 @@ function Pages() {
         <Banner />
         <Solucoes />
         <Diferenciais />
+        <Jornada />
         <Tabela />
     </div>
   );

@@ -44,6 +44,7 @@ const Footer = () => {
                     <li>White Label</li>
                 </ul>
             </div>
+            
         </section>
     )
 }

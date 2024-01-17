@@ -28,10 +28,9 @@ const Jornada = () => {
             <div className='container'>
                 <ul className="jornada-pg__list">
                     <li><b>Semana 1</b> - Contrato assinado e Kickoff</li>
-                    <li><b>Semana 2 e 3</b> - Desenvolvimento do site</li>
-                    <li><b>Semana 4</b> - Configuração de hospedagem e dominio</li>
-                    <li><b>Semana 5</b> - Revisão e ajustes</li>
-                    <li><b>Semana 6</b> - Go live</li>
+                    <li><b>Semana 2</b> - Desenvolvimento do site</li>
+                    <li><b>Semana 3</b> - Revisão e ajustes</li>
+                    <li><b>Go live</b></li>
                 </ul>
             </div>
         </section>

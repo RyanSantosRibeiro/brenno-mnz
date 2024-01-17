@@ -40,7 +40,6 @@ const Header = () => {
                 <ul className={`header__menu ${open?'open':''}`}>
                     {/* <li>{window.location.hash}</li> */}
                     <img className='' src={fecha} alt='' onClick={()=>setOpen(!open)}/>
-                    <li><Link to='/'>Home</Link></li>
                     <li><Link to='/white-label'>White Label</Link></li>
                     {/* <li><a href='/suits'>Suits</a></li> */}
                     <li><Link to='/pages'>Pages</Link></li>

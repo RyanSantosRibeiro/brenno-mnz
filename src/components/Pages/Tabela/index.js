@@ -60,6 +60,11 @@ const Tabela = () => {
                         <td><img src={check} /></td>
                     </tr>
                     <tr>
+                        <td>Horas mensais</td>
+                        <td>6 Horas</td>
+                        <td>18 Horas</td>
+                    </tr>
+                    <tr>
                         <td>Botão flutuante no WhatsApp</td>
                         <td><img src={check} /></td>
                         <td><img src={check} /></td>

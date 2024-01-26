@@ -30,7 +30,7 @@ const Contact = () => {
                 <div className='contact__modal'>
                     <h4>Social</h4>
                     <div className='contact__social'>
-                        <a href='https://wa.me/5521995084896?text=Hello%21'>
+                        <a href='https://wa.me/552288001876?text=Hello%21'>
                             <img src={whatsapp} alt=''/>
                             <span>21 995084896</span>
                         </a>

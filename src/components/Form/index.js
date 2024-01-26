@@ -101,7 +101,7 @@ const Form = () => {
                             </div>
                         </div>
                         </div>
-                    <a href={`https://api.whatsapp.com/send?phone=5521885947364&text=Oi%20tudo%20bom%20?%20Sou%20${cargo}%20e%20gostaria%20de%20entrar%20em%20contato!%0AEsse%20é%20meu%20instagram:%20${instagram}`}>Contato</a>
+                    <a href={`https://api.whatsapp.com/send?phone=5523222222222&text=Ol%C3%A1,%20tudo%20bem?%20Ocupo%20o%20cargo%20de%20${cargo}%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20MNZ.%0A%0A${fatura=='Sim'?'Já': 'Ainda não'}%20faturo%20acima%20de%20R$70mil.%0A${funcionario=='Sim'?'Já': 'Ainda não'}%20possuo%20mais%20de%205%20funcion%C3%A1rios.%0A${marketing=='Sim'?'Já': 'Ainda não'}%20investi%20num%20time%20de%20marketing%20antes.%0A%0AMeu%20Instagram%20%C3%A9:%20${instagram}.`}>Contato</a>
                     </div>
                 </div>
         </section>
